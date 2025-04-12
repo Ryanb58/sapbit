@@ -1,0 +1,9 @@
+.navbar .logo {
+  content: url('/logo-dark.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar .logo {
+    content: url('/logo-dark.svg');
+  }
+}

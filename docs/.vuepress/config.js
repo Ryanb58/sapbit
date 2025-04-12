@@ -20,8 +20,13 @@ export default defineUserConfig({
   ],
 
   theme: defaultTheme({
-    logo: 'logo.svg',
-    
+    logo: 'logo-light.svg',
+    logoDark: 'logo-dark.svg',
+    repo: 'https://github.com/ryanb58/sapbit',
+    editLink: true,
+    editLinkPattern:':repo/edit/:branch/:path',
+    docsBranch: 'main',
+    docsDir: 'docs',
     navbar: [
       { text: 'Home', link: '/' },
       { text: 'Get Started', link: '/get-started.html' },
