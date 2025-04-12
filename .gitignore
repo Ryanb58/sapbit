@@ -24,3 +24,4 @@ pnpm-debug.log*
 # Vue Press files
 .cache
 .temp
+dist

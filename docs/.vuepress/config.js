@@ -1,12 +1,23 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
 export default defineUserConfig({
   lang: 'en-US',
 
   title: 'SAP Bit',
   description: 'The Ultimate SAP Resource',
+
+  // Add the Umami Analytics plugin
+  plugins: [
+    umamiAnalyticsPlugin({
+      // Your Umami script URL
+      link: 'https://umami.taylorbrazelton.com/script.js',
+      // Your website ID
+      id: '09622328-439d-4b9f-8032-b049d28eb1eb',
+    }),
+  ],
 
   theme: defaultTheme({
     logo: 'logo.svg',
