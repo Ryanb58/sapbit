@@ -1,7 +1,8 @@
 ---
 home: true
 title: SAP Bit - Ultimate SAP Documentation
-heroImage: logo.svg
+heroImage: logo-light.svg
+heroImageDark: logo-dark.svg
 actions:
   - text: Get Started
     link: /get-started.html
